@@ -13,7 +13,7 @@
         <scene sceneID="rXM-H3-p5B">
             <objects>
                 <tableViewController id="7vl-Ty-1LN" customClass="CustomTableViewController" customModule="CustomTableView_XIBFiles" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="fiF-NT-rhA">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="168" sectionHeaderHeight="28" sectionFooterHeight="28" id="fiF-NT-rhA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -23,7 +23,7 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <outlet property="tableView" destination="fiF-NT-rhA" id="q8E-sA-pn0"/>
+                        <outlet property="myTableView" destination="fiF-NT-rhA" id="uFK-S1-nNU"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="den-Af-Z0q" userLabel="First Responder" sceneMemberID="firstResponder"/>
