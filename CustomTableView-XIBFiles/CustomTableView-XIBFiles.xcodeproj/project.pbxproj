@@ -13,6 +13,8 @@
 		543C9CE11F61E0260060DE7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 543C9CE01F61E0260060DE7F /* Assets.xcassets */; };
 		543C9CE41F61E0260060DE7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 543C9CE21F61E0260060DE7F /* LaunchScreen.storyboard */; };
 		543C9CED1F61E2A50060DE7F /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543C9CEC1F61E2A50060DE7F /* CustomTableViewController.swift */; };
+		5459A63F1F66E4D700DAE0CB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5459A63D1F66E4D700DAE0CB /* DetailViewController.swift */; };
+		5459A6401F66E4D700DAE0CB /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5459A63E1F66E4D700DAE0CB /* DetailViewController.xib */; };
 		546C5FF81F62D40F008D9091 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546C5FF61F62D40F008D9091 /* CustomTableViewCell.swift */; };
 		546C5FF91F62D40F008D9091 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 546C5FF71F62D40F008D9091 /* CustomTableViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -26,6 +28,8 @@
 		543C9CE31F61E0260060DE7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		543C9CE51F61E0260060DE7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		543C9CEC1F61E2A50060DE7F /* CustomTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
+		5459A63D1F66E4D700DAE0CB /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		5459A63E1F66E4D700DAE0CB /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		546C5FF61F62D40F008D9091 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		546C5FF71F62D40F008D9091 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +89,8 @@
 			children = (
 				546C5FF61F62D40F008D9091 /* CustomTableViewCell.swift */,
 				546C5FF71F62D40F008D9091 /* CustomTableViewCell.xib */,
+				5459A63D1F66E4D700DAE0CB /* DetailViewController.swift */,
+				5459A63E1F66E4D700DAE0CB /* DetailViewController.xib */,
 			);
 			name = "XIB Files";
 			sourceTree = "<group>";
@@ -150,6 +156,7 @@
 			files = (
 				543C9CE41F61E0260060DE7F /* LaunchScreen.storyboard in Resources */,
 				543C9CE11F61E0260060DE7F /* Assets.xcassets in Resources */,
+				5459A6401F66E4D700DAE0CB /* DetailViewController.xib in Resources */,
 				546C5FF91F62D40F008D9091 /* CustomTableViewCell.xib in Resources */,
 				543C9CDF1F61E0260060DE7F /* Main.storyboard in Resources */,
 			);
@@ -164,6 +171,7 @@
 			files = (
 				543C9CDC1F61E0260060DE7F /* ViewController.swift in Sources */,
 				543C9CED1F61E2A50060DE7F /* CustomTableViewController.swift in Sources */,
+				5459A63F1F66E4D700DAE0CB /* DetailViewController.swift in Sources */,
 				546C5FF81F62D40F008D9091 /* CustomTableViewCell.swift in Sources */,
 				543C9CDA1F61E0260060DE7F /* AppDelegate.swift in Sources */,
 			);

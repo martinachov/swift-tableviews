@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,7 +23,10 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R4a-he-Xxv">
                         <rect key="frame" x="28" y="44" width="94" height="94"/>
                         <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="94" id="0io-uE-8pd"/>
+                            <constraint firstAttribute="width" secondItem="R4a-he-Xxv" secondAttribute="height" multiplier="1:1" id="48R-9Z-IjH"/>
                             <constraint firstAttribute="width" constant="94" id="4I2-vg-cD1"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="94" id="LzP-eb-LqH"/>
                             <constraint firstAttribute="height" constant="94" id="xS8-pS-UHh"/>
                         </constraints>
                     </imageView>
@@ -32,12 +36,27 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdY-QX-nW7">
+                        <rect key="frame" x="318" y="8" width="80" height="37"/>
+                        <color key="backgroundColor" red="0.95224552098543824" green="0.96209527434613917" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="Vze-vi-ek9"/>
+                            <constraint firstAttribute="height" constant="37" id="bH9-4c-2yd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <state key="normal" title="Imagen"/>
+                        <connections>
+                            <action selector="btnDetalle:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="w1g-U0-Gva"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="5Y3-qm-mSC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="66" id="3yc-7M-7gA"/>
                     <constraint firstItem="5Y3-qm-mSC" firstAttribute="leading" secondItem="R4a-he-Xxv" secondAttribute="trailing" constant="58" id="9lL-6F-bDL"/>
                     <constraint firstAttribute="trailingMargin" secondItem="5Y3-qm-mSC" secondAttribute="trailing" constant="1" id="IDl-tp-q0r"/>
                     <constraint firstItem="R4a-he-Xxv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="Tb2-PM-Fwd"/>
+                    <constraint firstItem="wdY-QX-nW7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="d8B-t0-1hE"/>
+                    <constraint firstItem="wdY-QX-nW7" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="da7-nK-8rb"/>
                     <constraint firstAttribute="bottomMargin" secondItem="R4a-he-Xxv" secondAttribute="bottom" constant="22" id="n2h-XS-pc4"/>
                     <constraint firstItem="R4a-he-Xxv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="36" id="xPp-YL-gah"/>
                 </constraints>

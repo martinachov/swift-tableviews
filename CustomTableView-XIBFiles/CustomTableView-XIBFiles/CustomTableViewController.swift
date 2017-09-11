@@ -16,7 +16,9 @@ class CustomTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        myTableView.register( UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomTableViewCell")
+        //Register NIB Object
+        let nib = UINib(nibName: "CustomTableViewCell", bundle: nil)
+        myTableView.register( nib, forCellReuseIdentifier: "CustomTableViewCell")
     }
     
     override func didReceiveMemoryWarning() {
@@ -40,21 +42,25 @@ class CustomTableViewController: UITableViewController {
         let marca = marcas[indexPath.row]
         cell.labelCell.text = marca
         cell.imageCell.image = UIImage(named: marca)
-
+        cell.tableViewDelegate = self
+        cell.index = indexPath
         return cell
     }
- 
-
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     }
-    */
+  
+    //Llamado desde la celda 
+    func detaillOfCell(atIndex index: IndexPath) {
+        let name = marcas[index.row] + "Detail"
+        let cellVC = DetailViewController()
+        cellVC.commonInit(name)
+        self.navigationController?.pushViewController(cellVC, animated: true)
+        self.myTableView.deselectRow(at: index, animated: true)
+        
+    }
+
+
+
 
 }
